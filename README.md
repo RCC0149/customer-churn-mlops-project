@@ -10,6 +10,7 @@
 | **Aug 29 PM**      | SageMaker + Kubernetes deployment  |
 | **Aug 30 Morning** | Final demo prep, schedule Zoom     |
 
+
 ✅ Deliverables
 
  GitHub repo with clean code & organized folders
@@ -27,6 +28,7 @@
  Kubernetes YAML files
  
  Scheduled Zoom demo
+
 
 📁 Folder Structure (For GitHub Repository)
 
@@ -101,6 +103,7 @@
 ├── README.md                               # Project overview
 
 └── .gitignore                              # Ignore files/folders like __pycache__, *.pkl, etc.
+
 
 # 📊 Customer Churn Prediction - MLOps Project
 
