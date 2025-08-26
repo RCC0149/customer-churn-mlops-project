@@ -13,51 +13,93 @@
 ✅ Deliverables
 
  GitHub repo with clean code & organized folders
+ 
  README.md with project explanation
+ 
  .ipynb and .pkl files
+ 
  Flask app and Docker container
+ 
  CI/CD pipeline and live Heroku app
+ 
  SageMaker notebook or screenshot
+ 
  Kubernetes YAML files
+ 
  Scheduled Zoom demo
 
 📁 Folder Structure (For GitHub Repository)
 
  customer-churn-mlops-project/
+ 
 │
+
 ├── data/
+
 │   └── telco_churn.csv                     # Raw dataset (add to .gitignore if too large)
+
 │
+
 ├── notebooks/
+
 │   └── 01_data_exploration.ipynb           # EDA, cleaning, feature engineering
+
 │   └── 02_model_training.ipynb             # Training, validation, metrics
+
 │
+
 ├── model/
+
 │   └── churn_model.pkl                     # Trained ML model
+
 │
+
 ├── app/
+
 │   ├── app.py                              # Flask application
+
 │   ├── templates/
+
 │   │   └── index.html                      # HTML form for predictions
+
 │   └── static/                             # (Optional) CSS, JS files
+
 │
+
 ├── docker/
+
 │   └── Dockerfile                          # Containerize Flask app
+
 │
+
 ├── k8s/
+
 │   ├── deployment.yaml                     # Kubernetes deployment config
+
 │   └── service.yaml                        # Kubernetes service config
+
 │
+
 ├── .github/
+
 │   └── workflows/
+
 │       └── ci-cd.yml                       # GitHub Actions workflow for CI/CD
+
 │
+
 ├── sagemaker/
+
 │   └── sagemaker_notebook.ipynb           # Container-based model deployment
+
 │
+
 ├── requirements.txt                        # Python dependencies
+
 ├── heroku.yml                              # Heroku container deployment
+
 ├── README.md                               # Project overview
+
 └── .gitignore                              # Ignore files/folders like __pycache__, *.pkl, etc.
 
 # 📊 Customer Churn Prediction - MLOps Project
@@ -73,15 +115,25 @@ To build and deploy a predictive model that identifies customers likely to churn
 ## 📁 Project Structure
 
 ├── data/ # Raw dataset
+
 ├── notebooks/ # Jupyter notebooks for EDA and modeling
+
 ├── model/ # Saved model (.pkl)
+
 ├── app/ # Flask app for model inference
+
 ├── docker/ # Dockerfile and containerization
+
 ├── k8s/ # Kubernetes configuration files
+
 ├── .github/workflows/ # GitHub Actions CI/CD pipeline
+
 ├── sagemaker/ # Deployment in AWS SageMaker
+
 ├── requirements.txt # Python dependencies
+
 ├── heroku.yml # Heroku deployment config
+
 ├── README.md # Project overview and instructions
 
 ---
