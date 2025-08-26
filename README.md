@@ -234,7 +234,7 @@ A live demonstration will be scheduled with the instructor to walk through:
 
 ## 👨‍💻 Author
 
-- **Your Name**
+- **Randall Crawford**
 - [GitHub Profile](https://github.com/RCC0149/customer-churn-mlops-project)
 - **Email:** rcc_0149@yahoo.com
 
