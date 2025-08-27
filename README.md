@@ -50,23 +50,21 @@
 
 │
 
-├── models/
-
-│   └── churn_model.pkl                     # Trained ML model
-
-│   └── scaler.pkl 
-
-│
-
 ├── app/
 
 │   ├── app.py                              # Flask application
+
+│   ├── models/
+
+│   │  └── churn_model.pkl                  # Trained ML model
+
+│   │  └── scaler.pkl 
 
 │   ├── templates/
 
 │   │   └── index.html                      # HTML form for predictions
 
-│   └── static/                             # (Optional) CSS, JS files
+│   ├── static/                             # (Optional) CSS, JS files
 
 │   │  └── style.css                        # Style CSS for HTML form
 
