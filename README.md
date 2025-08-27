@@ -68,7 +68,7 @@
 
 │   └── static/                             # (Optional) CSS, JS files
 
-│   │   └── style.css                       # Style CSS for HTML form
+│   │  └── style.css                        # Style CSS for HTML form
 
 │   ├── Dockerfile                          # Containerize Flask app
 
