@@ -4,8 +4,8 @@
 | Date               | Task                               |
 | ------------------ | ---------------------------------- |
 | **Aug 25–26**      | Dataset download, EDA, cleaning    |
-| **Aug 27**         | Model training and evaluation      |
-| **Aug 28**         | Flask app + Dockerization          |
+| **Aug 26**         | Model training and evaluation      |
+| **Aug 26-27**      | Flask app + Dockerization          |
 | **Aug 29 AM**      | CI/CD pipeline + Heroku deployment |
 | **Aug 29 PM**      | SageMaker + Kubernetes deployment  |
 | **Aug 30 Morning** | Final demo prep, schedule Zoom     |
@@ -38,21 +38,23 @@
 
 ├── data/
 
-│   └── telco_churn.csv                     # Raw dataset (add to .gitignore if too large)
+│   └── Telco-Customer-Churn-prepared.csv             # Prepared dataset (add to .gitignore if too large)
 
 │
 
 ├── notebooks/
 
-│   └── 01_data_exploration.ipynb           # EDA, cleaning, feature engineering
+│   └── ANA-680_FinalProject_EDA_8-30-2025.ipynb      # EDA, cleaning, feature engineering
 
-│   └── 02_model_training.ipynb             # Training, validation, metrics
+│   └── ANA-680_FinalProject_Model_8-30-2025.ipynb    # Training, validation, metrics
 
 │
 
-├── model/
+├── models/
 
 │   └── churn_model.pkl                     # Trained ML model
+
+│   └── scaler.pkl 
 
 │
 
@@ -66,11 +68,9 @@
 
 │   └── static/                             # (Optional) CSS, JS files
 
-│
+|   │   └── style.css                       # Style CSS for HTML form
 
-├── docker/
-
-│   └── Dockerfile                          # Containerize Flask app
+│   ├── Dockerfile                          # Containerize Flask app
 
 │
 
