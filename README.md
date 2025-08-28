@@ -77,11 +77,13 @@
 
 │   ├── .python-version                     # Python version identification file
 
+│   ├── heroku.yml                          # Docker Actions workflow for CI/CD
+
 │   ├── .github
 
 │   │   └── workflows/
 
-│   │   │   └── main.yml                    # DockerHub Actions workflow for CI/CD
+│   │   │   └── main.yml                    # GitHub Actions workflow for CI/CD
 
 │
 
