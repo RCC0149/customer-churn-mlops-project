@@ -20,7 +20,7 @@ jobs:
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-    - name: Build and push Docker image
+    - name: Build and push Docker image to Docker Hub
       run: |
         docker build -t thorlongus/telco-churn:latest .
         docker push thorlongus/telco-churn:latest
@@ -28,9 +28,9 @@ jobs:
       run: echo "${{ secrets.HEROKU_API_KEY }}" | docker login --username=_ --password-stdin registry.heroku.com
     - name: Build and push to Heroku
       run: |
-        docker build -t registry.heroku.com/telco-churn-app-2025/web .
-        docker push registry.heroku.com/telco-churn-app-2025/web
+        docker build -t registry.heroku.com/telco-customer-churn-pred/web .
+        docker push registry.heroku.com/telco-customer-churn-pred/web
     - name: Release to Heroku
-      run: heroku container:release web --app telco-churn-app-2025
+      run: heroku container:release web --app telco-customer-churn-pred
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
