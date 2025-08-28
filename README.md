@@ -77,9 +77,11 @@
 
 │   ├── .python-version                     # Python version identification file
 
-│   ├── workflows/
+│   ├── .github
 
-│   │   └── main.yml                        # DockerHub Actions workflow for CI/CD
+│   │   └── workflows/
+
+│   │   │   └── main.yml                    # DockerHub Actions workflow for CI/CD
 
 │
 
