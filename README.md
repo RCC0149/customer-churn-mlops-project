@@ -6,8 +6,9 @@
 | **Aug 25–26**      | Dataset download, EDA, cleaning    |
 | **Aug 26**         | Model training and evaluation      |
 | **Aug 26-27**      | Flask app + Dockerization          |
-| **Aug 29 AM**      | CI/CD pipeline + Heroku deployment |
-| **Aug 29 PM**      | SageMaker + Kubernetes deployment  |
+| **Aug 27-28**      | CI/CD pipeline + Heroku deployment |
+| **Aug 28**         | SageMaker Lab + AWS deployment     |
+| **Aug 29**         | Kubernetes deployment              |
 | **Aug 30 Morning** | Final demo prep, schedule Zoom     |
 
 
@@ -69,6 +70,16 @@
 │   │  └── style.css                        # Style CSS for HTML form
 
 │   ├── Dockerfile                          # Containerize Flask app
+
+│   ├── .dockerignore                       # Omit needless files for Containerize Flask app
+
+│   ├── Procfile                            # Support file for application deployment to Heroku
+
+│   ├── .python-version                     # Python version identification file
+
+│   ├── workflows/
+
+│   │   └── main.yml                        # DockerHub Actions workflow for CI/CD
 
 │
 
@@ -222,10 +233,10 @@ A live demonstration will be scheduled with the instructor to walk through:
 ## ✅ To-Do Checklist
 
 - [x] Select dataset & define problem
-- [ ] Perform EDA and data prep
-- [ ] Train and evaluate model
-- [ ] Build and test Flask app
-- [ ] Containerize app using Docker
+- [x] Perform EDA and data prep
+- [x] Train and evaluate model
+- [x] Build and test Flask app
+- [x] Containerize app using Docker
 - [ ] Set up CI/CD and deploy on Heroku
 - [ ] Redeploy via SageMaker
 - [ ] Deploy with Kubernetes
