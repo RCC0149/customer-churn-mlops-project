@@ -89,7 +89,7 @@
 
 │
 
-├── k8s/
+├── kubernetes/
 
 │   ├── deployment.yaml                     # Kubernetes deployment config
 
@@ -133,7 +133,7 @@ To build and deploy a predictive model that identifies customers likely to churn
 - **Containerization:** `Docker`, `Docker Hub`
 - **CI/CD:** `GitHub Actions`, `Heroku`
 - **Cloud ML Platform:** `AWS SageMaker Studio Lab`
-- **Orchestration:** `Kubernetes`, `kubectl`, `minikube` (or EKS)
+- **Orchestration:** `Kubernetes`, `kubectl`, `minikube`
 
 ---
 
@@ -204,7 +204,7 @@ A live demonstration will be scheduled with the instructor to walk through:
 - [x] Containerize app using Docker
 - [x] Set up CI/CD and deploy on Heroku
 - [ ] Redeploy via SageMaker
-- [ ] Deploy with Kubernetes
+- [x] Deploy with Kubernetes
 - [ ] Final demo
 
 ---
