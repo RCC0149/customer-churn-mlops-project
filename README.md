@@ -7,7 +7,7 @@
 | **Aug 26**         | Model training and evaluation      |
 | **Aug 26-27**      | Flask app + Dockerization          |
 | **Aug 27-28**      | CI/CD pipeline + Heroku deployment |
-| **Aug 28**         | SageMaker Lab + AWS deployment     |
+| **Aug 28-29**      | SageMaker Lab + AWS deployment     |
 | **Aug 29**         | Kubernetes deployment              |
 | **Aug 30 Morning** | Final demo prep, schedule Zoom     |
 
@@ -61,6 +61,8 @@
 
 │   │  └── scaler.pkl 
 
+│   ├── requirements.txt                    # Python dependencies
+
 │   ├── templates/
 
 │   │   └── index.html                      # HTML form for predictions
@@ -95,27 +97,13 @@
 
 │
 
-├── .github/
-
-│   └── workflows/
-
-│       └── ci-cd.yml                       # GitHub Actions workflow for CI/CD
-
-│
-
 ├── sagemaker/
 
 │   └── sagemaker_notebook.ipynb           # Container-based model deployment
 
 │
 
-├── requirements.txt                        # Python dependencies
-
-├── heroku.yml                              # Heroku container deployment
-
 ├── README.md                               # Project overview
-
-└── .gitignore                              # Ignore files/folders like __pycache__, *.pkl, etc.
 
 
 # 📊 Customer Churn Prediction - MLOps Project
@@ -125,32 +113,6 @@ This project predicts customer churn in a subscription-based telecom business us
 ## 🚀 Objective
 
 To build and deploy a predictive model that identifies customers likely to churn using historical data. This empowers the business to proactively engage at-risk customers and reduce churn.
-
----
-
-## 📁 Project Structure
-
-├── data/ # Raw dataset
-
-├── notebooks/ # Jupyter notebooks for EDA and modeling
-
-├── model/ # Saved model (.pkl)
-
-├── app/ # Flask app for model inference
-
-├── docker/ # Dockerfile and containerization
-
-├── k8s/ # Kubernetes configuration files
-
-├── .github/workflows/ # GitHub Actions CI/CD pipeline
-
-├── sagemaker/ # Deployment in AWS SageMaker
-
-├── requirements.txt # Python dependencies
-
-├── heroku.yml # Heroku deployment config
-
-├── README.md # Project overview and instructions
 
 ---
 
@@ -166,7 +128,7 @@ To build and deploy a predictive model that identifies customers likely to churn
 ## 🔧 Technologies Used
 
 - **Data Processing:** `pandas`, `numpy`, `matplotlib`, `seaborn`
-- **Modeling:** `scikit-learn`, `xgboost`
+- **Modeling:** `scikit-learn`, `RandomForest`
 - **Web Framework:** `Flask`
 - **Containerization:** `Docker`, `Docker Hub`
 - **CI/CD:** `GitHub Actions`, `Heroku`
@@ -193,7 +155,7 @@ To build and deploy a predictive model that identifies customers likely to churn
 
 - CI/CD is handled using **GitHub Actions**
 - On every push to `main`, the model is tested, containerized, and deployed to **Heroku**
-- Configuration is available in `.github/workflows/ci-cd.yml`
+- Configuration is available in `.github/workflows/main.yml`
 
 ---
 
@@ -211,12 +173,11 @@ To build and deploy a predictive model that identifies customers likely to churn
 
 ## 🧠 Model Performance
 
-> *To be updated after model training...*
+> *After model training and tuning...*
 
-- Accuracy: `--%`
-- Precision: `--%`
-- Recall: `--%`
-- AUC: `--`
+- Accuracy: `77.73%`
+- F1 Score: `66.81%`
+- Recall: `82.72%`
 
 ---
 
@@ -241,7 +202,7 @@ A live demonstration will be scheduled with the instructor to walk through:
 - [x] Train and evaluate model
 - [x] Build and test Flask app
 - [x] Containerize app using Docker
-- [ ] Set up CI/CD and deploy on Heroku
+- [x] Set up CI/CD and deploy on Heroku
 - [ ] Redeploy via SageMaker
 - [ ] Deploy with Kubernetes
 - [ ] Final demo
