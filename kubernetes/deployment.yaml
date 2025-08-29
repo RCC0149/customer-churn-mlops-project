@@ -1,0 +1,20 @@
+apiVersion: apps/v1 
+kind: Deployment 
+metadata: 
+  name: telco-churn-deployment 
+spec: 
+  replicas: 1 
+  selector: 
+    matchLabels: 
+      app: telco-churn 
+  template: 
+    metadata: 
+      labels: 
+        app: telco-churn 
+    spec: 
+      containers: 
+      - name: telco-churn 
+        image: telco-churn:latest # Use your local image
+        imagePullPolicy: Never
+        ports: 
+        - containerPort: 5000 # Replace with your container's port 
