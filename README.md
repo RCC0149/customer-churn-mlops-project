@@ -202,7 +202,7 @@ A live demonstration will be scheduled with the instructor to walk through:
 - [x] Train and evaluate model
 - [x] Build and test Flask app
 - [x] Containerize app using Docker
-- [x] Set up CI/CD and deploy on Heroku
+- [x] Set up CI/CD and deploy on Heroku    https://telco-customer-churn-pred-44440b37f0f2.herokuapp.com/
 - [ ] Redeploy via SageMaker
 - [x] Deploy with Kubernetes
 - [ ] Final demo
