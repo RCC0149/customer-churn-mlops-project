@@ -7,9 +7,9 @@
 | **Aug 26**         | Model training and evaluation      |
 | **Aug 26-27**      | Flask app + Dockerization          |
 | **Aug 27-28**      | CI/CD pipeline + Heroku deployment |
-| **Aug 28-29**      | SageMaker Lab + AWS deployment     |
+| **Aug 28-31**      | SageMaker Lab + AWS deployment     |
 | **Aug 29**         | Kubernetes deployment              |
-| **Aug 30 Morning** | Final demo prep, schedule Zoom     |
+| **Aug 30**         | Final demo prep, schedule Zoom     |
 
 
 ✅ Deliverables
@@ -205,7 +205,7 @@ A live demonstration will be scheduled with the instructor to walk through:
 - [x] Set up CI/CD and deploy on Heroku    https://telco-customer-churn-pred-44440b37f0f2.herokuapp.com/
 - [ ] Redeploy via SageMaker
 - [x] Deploy with Kubernetes
-- [ ] Final demo
+- [x] Final demo
 
 ---
 
