@@ -1,6 +1,6 @@
 # customer-churn-mlops-project
 
-🗓️ Timeline to Hit the Deadline (Aug 30, 2025, 1:00 PM CT)
+🗓️ Timeline to Hit the Deadline (Sept 1, 2025, 2:00 AM CT)
 | Date               | Task                               |
 | ------------------ | ---------------------------------- |
 | **Aug 25–26**      | Dataset download, EDA, cleaning    |
@@ -161,7 +161,7 @@ To build and deploy a predictive model that identifies customers likely to churn
 
 ## ☁️ Cloud & Container Tools
 
-| Tool       | Use Case                        |
+| Tool       | Use Case                         |
 |------------|----------------------------------|
 | Docker     | Containerizing Flask application |
 | Docker Hub | Image hosting                    |
