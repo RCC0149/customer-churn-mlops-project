@@ -7,7 +7,7 @@
 | **Aug 26**         | Model training and evaluation      |
 | **Aug 26-27**      | Flask app + Dockerization          |
 | **Aug 27-28**      | CI/CD pipeline + Heroku deployment |
-| **Aug 28-31**      | SageMaker Lab + AWS deployment     |
+| **Aug 28-?**      | SageMaker Lab + AWS deployment     |
 | **Aug 29**         | Kubernetes deployment              |
 | **Aug 30**         | Final demo prep, schedule Zoom     |
 
