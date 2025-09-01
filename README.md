@@ -7,7 +7,7 @@
 | **Aug 26**         | Model training and evaluation      |
 | **Aug 26-27**      | Flask app + Dockerization          |
 | **Aug 27-28**      | CI/CD pipeline + Heroku deployment |
-| **Aug 28-?**      | SageMaker Lab + AWS deployment     |
+| **Aug 28-?**       | SageMaker Lab + AWS deployment     |
 | **Aug 29**         | Kubernetes deployment              |
 | **Aug 30**         | Final demo prep, schedule Zoom     |
 
@@ -99,7 +99,9 @@ ipynb
 
 ├── sagemaker/
 
-│   ├── maintenance.ipynb                   # Code for deleting endpoint, checking progress, and generating CloudWatch reports
+│   ├── maintenance.ipynb                   # Python code for deleting endpoint, checking progress, and generating CloudWatch reports
+
+│   ├── rebuild_model.sh                    # Bash code for deleting model.tar.gz, creating new model.tar.gz, and exporting to S3
 
 │   ├── train_model.ipynb                   # Streamlined training model for quick .pkl file creation and environment compatibility
 
