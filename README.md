@@ -94,12 +94,16 @@
 │   ├── deployment.yaml                     # Kubernetes deployment config
 
 │   └── service.yaml                        # Kubernetes service config
-
+ipynb
 │
 
 ├── sagemaker/
 
-│   └── sagemaker_notebook.ipynb           # Container-based model deployment
+│   ├── maintenance.ipynb                   # Code for deleting endpoint, checking progress, and generating CloudWatch reports
+
+│   ├── train_model.ipynb                   # Streamlined training model for quick .pkl file creation and environment compatibility
+
+│   └── deploy_model.ipynb                  # Container-based model deployment
 
 │
 
