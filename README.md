@@ -33,6 +33,8 @@
 
 📁 Folder Structure (For GitHub Repository)
 
+ ---
+ 
  customer-churn-mlops-project/
  
 │
@@ -107,9 +109,9 @@ ipynb
 
 │   └── deploy_model.ipynb                  # Container-based model deployment
 
-│
+---
 
-├── README.md                               # Project overview
+---
 
 
 # 📊 Customer Churn Prediction - MLOps Project
