@@ -1,115 +1,77 @@
 # customer-churn-mlops-project
 
-🗓️ Timeline to Hit the Deadline (Sept 1, 2025, 2:00 AM CT)
-| Date               | Task                               |
-| ------------------ | ---------------------------------- |
-| **Aug 25–26**      | Dataset download, EDA, cleaning    |
-| **Aug 26**         | Model training and evaluation      |
-| **Aug 26-27**      | Flask app + Dockerization          |
-| **Aug 27-28**      | CI/CD pipeline + Heroku deployment |
-| **Aug 28-?**       | SageMaker Lab + AWS deployment     |
-| **Aug 29**         | Kubernetes deployment              |
-| **Aug 30**         | Final demo prep, schedule Zoom     |
+🗓️ **Timeline to Hit the Deadline (Sept 1, 2025, 2:00 AM CT)**
 
-
-✅ Deliverables
-
- GitHub repo with clean code & organized folders
- 
- README.md with project explanation
- 
- .ipynb and .pkl files
- 
- Flask app and Docker container
- 
- CI/CD pipeline and live Heroku app
- 
- SageMaker notebook or screenshot
- 
- Kubernetes YAML files
- 
- Scheduled Zoom demo
-
-
-📁 Folder Structure (For GitHub Repository)
-
- ---
- 
- customer-churn-mlops-project/
- 
-│
-
-├── data/
-
-│   └── Telco-Customer-Churn-prepared.csv             # Prepared dataset (add to .gitignore if too large)
-
-│
-
-├── notebooks/
-
-│   └── ANA-680_FinalProject_EDA_8-30-2025.ipynb      # EDA, cleaning, feature engineering
-
-│   └── ANA-680_FinalProject_Model_8-30-2025.ipynb    # Training, validation, metrics
-
-│
-
-├── app/
-
-│   ├── app.py                              # Flask application
-
-│   ├── models/
-
-│   │  └── churn_model.pkl                  # Trained ML model
-
-│   │  └── scaler.pkl 
-
-│   ├── requirements.txt                    # Python dependencies
-
-│   ├── templates/
-
-│   │   └── index.html                      # HTML form for predictions
-
-│   ├── static/                             # (Optional) CSS, JS files
-
-│   │  └── style.css                        # Style CSS for HTML form
-
-│   ├── Dockerfile                          # Containerize Flask app
-
-│   ├── .dockerignore                       # Omit needless files for Containerize Flask app
-
-│   ├── Procfile                            # Support file for application deployment to Heroku
-
-│   ├── .python-version                     # Python version identification file
-
-│   ├── heroku.yml                          # Docker Actions workflow for CI/CD
-
-│   ├── .github
-
-│   │   └── workflows/
-
-│   │   │   └── main.yml                    # GitHub Actions workflow for CI/CD
-
-│
-
-├── kubernetes/
-
-│   ├── deployment.yaml                     # Kubernetes deployment config
-
-│   └── service.yaml                        # Kubernetes service config
-ipynb
-│
-
-├── sagemaker/
-
-│   ├── maintenance.ipynb                   # Python code for deleting endpoint, checking progress, and generating CloudWatch reports
-
-│   ├── rebuild_model.sh                    # Bash code for deleting model.tar.gz, creating new model.tar.gz, and exporting to S3
-
-│   ├── train_model.ipynb                   # Streamlined training model for quick .pkl file creation and environment compatibility
-
-│   └── deploy_model.ipynb                  # Container-based model deployment
+| Date            | Task                               |
+|-----------------|------------------------------------|
+| **Aug 25–26**   | Dataset download, EDA, cleaning    |
+| **Aug 26**      | Model training and evaluation      |
+| **Aug 26–27**   | Flask app + Dockerization          |
+| **Aug 27–28**   | CI/CD pipeline + Heroku deployment |
+| **Aug 28–?**    | SageMaker Lab + AWS deployment     |
+| **Aug 29**      | Kubernetes deployment              |
+| **Aug 30**      | Final demo prep, schedule Zoom     |
 
 ---
+
+## ✅ Deliverables
+
+- GitHub repo with clean code & organized folders  
+- README.md with project explanation  
+- `.ipynb` and `.pkl` files  
+- Flask app and Docker container  
+- CI/CD pipeline and live Heroku app  
+- SageMaker notebook or screenshot  
+- Kubernetes YAML files  
+- Scheduled Zoom demo  
+
+---
+
+## 📁 Folder Structure (GitHub Repository)
+
+```text
+customer-churn-mlops-project/
+│
+├── data/
+│   └── Telco-Customer-Churn-prepared.csv
+│       # Prepared dataset (add to .gitignore if too large)
+│
+├── notebooks/
+│   ├── ANA-680_FinalProject_EDA_8-30-2025.ipynb
+│   │   # EDA, cleaning, feature engineering
+│   └── ANA-680_FinalProject_Model_8-30-2025.ipynb
+│       # Training, validation, metrics
+│
+├── app/
+│   ├── app.py                          # Flask application
+│   ├── models/
+│   │   ├── churn_model.pkl             # Trained ML model
+│   │   └── scaler.pkl                  # Feature scaler
+│   ├── requirements.txt                # Python dependencies
+│   ├── templates/
+│   │   └── index.html                  # HTML form for predictions
+│   ├── static/                         # (Optional) CSS, JS files
+│   │   └── style.css
+│   ├── Dockerfile                      # Containerize Flask app
+│   ├── .dockerignore                   # Docker exclusions
+│   ├── Procfile                        # Heroku deployment support
+│   ├── .python-version                 # Python runtime specification
+│   ├── heroku.yml                      # Docker-based CI/CD config
+│   └── .github/
+│       └── workflows/
+│           └── main.yml                # GitHub Actions CI/CD workflow
+│
+├── kubernetes/
+│   ├── deployment.yaml                 # Kubernetes deployment config
+│   └── service.yaml                    # Kubernetes service config
+│
+├── sagemaker/
+│   ├── maintenance.ipynb               # Endpoint cleanup & monitoring
+│   ├── rebuild_model.sh                # Model artifact rebuild + S3 export
+│   ├── train_model.ipynb               # Streamlined training for SageMaker
+│   └── deploy_model.ipynb              # Container-based SageMaker deployment
+│
+└── README.md
 
 ---
 
