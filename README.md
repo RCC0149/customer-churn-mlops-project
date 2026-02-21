@@ -1,4 +1,16 @@
-# customer-churn-mlops-project
+# Customer Churn Prediction – MLOps Final Project
+
+**Author:** Randall Crawford  
+
+**Course:** ANA 680 – Machine Learning Deployment  
+
+---
+
+This project implements an end-to-end **MLOps pipeline** to predict customer churn in a subscription-based telecom business. The solution spans **data preparation, model training, containerization, CI/CD automation, cloud deployment, and orchestration**, integrating multiple modern deployment technologies.
+
+The project culminates in a fully deployed and demonstrated machine learning system using **Flask, Docker, GitHub Actions, Heroku, AWS SageMaker, and Kubernetes**.
+
+---
 
 🗓️ **Timeline to Hit the Deadline (Sept 1, 2025, 2:00 AM CT)**
 
@@ -23,7 +35,6 @@
 - CI/CD pipeline and live Heroku app  
 - SageMaker notebook or screenshot  
 - Kubernetes YAML files  
-- Scheduled Zoom demo  
 
 ---
 
@@ -75,10 +86,11 @@ customer-churn-mlops-project/
 
 ---
 
-
 # 📊 Customer Churn Prediction - MLOps Project
 
 This project predicts customer churn in a subscription-based telecom business using a machine learning pipeline deployed through modern MLOps practices. The model is built, containerized, and deployed using tools such as Flask, Docker, GitHub Actions, Heroku, AWS SageMaker, and Kubernetes.
+
+---
 
 ## 🚀 Objective
 
@@ -117,7 +129,6 @@ To build and deploy a predictive model that identifies customers likely to churn
 6. **CI/CD Pipeline to Heroku using GitHub Actions**
 7. **Redeploy using AWS SageMaker Studio Lab**
 8. **Deploy with Kubernetes Cluster**
-9. **Live Demonstration via Zoom**
 
 ---
 
@@ -151,20 +162,6 @@ To build and deploy a predictive model that identifies customers likely to churn
 
 ---
 
-## 📞 Demo & Contact
-
-A live demonstration will be scheduled with the instructor to walk through:
-
-- Flask model inference
-- Containerized deployment
-- CI/CD pipeline
-- AWS SageMaker & Kubernetes deployment
-
-📅 **Deadline:** Saturday, August 30, 2025 – 1:00 PM CT  
-📹 **Zoom Demo:** _To be scheduled_
-
----
-
 ## ✅ To-Do Checklist
 
 - [x] Select dataset & define problem
@@ -178,10 +175,4 @@ A live demonstration will be scheduled with the instructor to walk through:
 - [x] Final demo
 
 ---
-
-## 👨‍💻 Author
-
-- **Randall Crawford**
-- [GitHub Profile](https://github.com/RCC0149/customer-churn-mlops-project)
-- **Email:** rcc_0149@yahoo.com
 
